@@ -1,5 +1,5 @@
 # ChatTest
 
-![App Screenshot](Capture.png)
+![App Screenshot](Capture.PNG)
 
 http://localhost:8080/
