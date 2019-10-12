@@ -12,6 +12,13 @@ A way to connect with fellow Cal Poly Pomona Students
 
 ### How to run
 
+Importing the Project into Eclipse
+----------------------------------
+
+1. File->Import->Maven->Existing Maven Projects
+2. Select the directory containing the pom.xml file
+3. Finish
+
 ```
 http://localhost:8080/
 ```
