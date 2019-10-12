@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-      <title>Spring Boot WebSocket Chat Application</title>
+      <title>Bronco Chat</title>
       <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
@@ -10,14 +10,35 @@
       <h2>Sorry! Your browser doesn't support Javascript</h2>
     </noscript>
 
+    <div id="title">
+        <div id="header">
+            <h2>Bronco Chat</h2>
+        </div>
+
     <div id="username-page">
         <div class="username-page-container">
+			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png">
             <h1 class="title">Enter a username</h1>
             <form id="usernameForm" name="usernameForm">
                 <div class="form-group">
                     <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
                 </div>
+			<h1 class="title">Select a college</h1>
+			<form action="/action_page.php">
+			  <select name="major">
+				<option disabled selected value> -- Select an Option -- </option>
+			    <option value="agriculture">College of Agriculture</option>
+			    <option value="business">College of Business Administration</option>
+			    <option value="education">College of Education & Integrative Studies</option>
+			    <option value="engineering">College of Engineering</option>
+				<option value="environmentaldesign">College of Environmental Design</option>
+				<option value="hospitality">College of Hospitality Management</option>
+				<option value="class">College of Letters, Arts & Social Sciences</option>
+				<option value="science">College of Science</option>
+				
+			</form>
                 <div class="form-group">
+				</select>
                     <button type="submit" class="accent username-submit">Start Chatting</button>
                 </div>
             </form>
