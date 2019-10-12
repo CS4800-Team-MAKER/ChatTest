@@ -1,7 +1,7 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,body {
@@ -35,7 +35,7 @@ html,body {
 	background-color: #4CAF50;
 	color: gold;
 }
-/*
+
 body {
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ body {
     font-size: 1rem;
     line-height: 1.58;
     color: #333;
-    background-color: #228B22;
+    background-color: #FFD700;
     height: 100%;
 }
 
@@ -58,4 +58,16 @@ body:before {
     content: "";
     z-index: 0;
 }
-*/
+
+#header
+{
+    background: #228B22;
+	color: #FFD700;
+}
+table.meetups {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #FFD700;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}

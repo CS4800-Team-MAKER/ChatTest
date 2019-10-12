@@ -9,6 +9,7 @@ html,body {
     overflow: hidden;
 }
 
+/* bottom body */
 body {
     margin: 0;
     padding: 0;
@@ -50,6 +51,7 @@ body {
     position: relative;
 }
 
+/*top body*/
 body:before {
     height: 50%;
     width: 100%;
@@ -148,16 +150,18 @@ button.default {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
+/*send button */
 button.primary {
-    background-color: #128ff2;
+    background-color: #FFD700;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
-    color: #fff;
+    color: #228B22;
 }
 
+/*start chatting button */
 button.accent {
     background-color: #228B22;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
-    color: #fff;
+    color: #FFD700;
 }
 
 #username-page {
@@ -278,26 +282,6 @@ button.accent {
 	color: #FFD700;
 }
 
-#meetups-page {
-	color: #FFD700;
-}
-
-meetups-page:link{
-	color: #FFD700;
-}
-
-meetups-page:visited{
-	color: #FFD700;
-}
-
-meetups-page:hover{
-	color: #FFD700;
-}
-
-meetups-page:active{
-	color: #FFD700;
-}
-
 #messageForm .input-group input {
     float: left;
     width: calc(100% - 85px);
@@ -329,7 +313,6 @@ meetups-page:active{
     top: 65px;
     width: 100%;
 }
-
 
 @media screen and (max-width: 730px) {
 

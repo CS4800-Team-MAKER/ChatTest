@@ -3,6 +3,7 @@
 var usernamePage = document.querySelector('#username-page');
 var chatPage = document.querySelector('#chat-page');
 var usernameForm = document.querySelector('#usernameForm');
+var majorForm = document.querySelector('#majorForm');
 var messageForm = document.querySelector('#messageForm');
 var messageInput = document.querySelector('#message');
 var messageArea = document.querySelector('#messageArea');
@@ -10,6 +11,7 @@ var connectingElement = document.querySelector('.connecting');
 
 var stompClient = null;
 var username = null;
+var major = null;
 
 var colors = [
     '#2196F3', '#32c787', '#00BCD4', '#ff5652',
