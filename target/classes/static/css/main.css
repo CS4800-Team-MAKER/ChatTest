@@ -36,6 +36,20 @@ body {
     position: relative;
 }
 
+.meetups-page-container {
+	max-width: 100px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 15px;
+	text-align:center;
+    margin-left: 10px;
+    background-color: #228B22;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: -220px;
+    height: calc(100% - 60px);
+    max-height: 200px;
+    position: relative;
+}
+
 body:before {
     height: 50%;
     width: 100%;
@@ -234,6 +248,26 @@ button.accent {
 }
 
 #title-page {
+	color: #FFD700;
+}
+
+#meetups-page {
+	color: #FFD700;
+}
+
+meetups-page:link{
+	color: #FFD700;
+}
+
+meetups-page:visited{
+	color: #FFD700;
+}
+
+meetups-page:hover{
+	color: #FFD700;
+}
+
+meetups-page:active{
 	color: #FFD700;
 }
 
