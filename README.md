@@ -6,7 +6,7 @@ A way to connect with fellow Cal Poly Pomona Students
 
 
 
-![App Screenshot](images/Capture.PNG =250x250)
+![App Screenshot](images/Capture.PNG)
 ![App Screenshot](images/Capture2.PNG)
 ![App Screenshot](images/Capture3.png)
 
