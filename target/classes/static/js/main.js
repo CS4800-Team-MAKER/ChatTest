@@ -3,7 +3,7 @@
 var usernamePage = document.querySelector('#username-page');
 var chatPage = document.querySelector('#chat-page');
 var usernameForm = document.querySelector('#usernameForm');
-var majorForm = document.querySelector('#majorForm');
+//var majorForm = document.querySelector('#majorForm');
 var messageForm = document.querySelector('#messageForm');
 var messageInput = document.querySelector('#message');
 var messageArea = document.querySelector('#messageArea');
@@ -33,7 +33,6 @@ function connect(event) {
     event.preventDefault();
 }
 
-
 function onConnected() {
     // Subscribe to the Public Topic
     stompClient.subscribe('/topic/public', onMessageReceived);
@@ -47,12 +46,10 @@ function onConnected() {
     connectingElement.classList.add('hidden');
 }
 
-
 function onError(error) {
     connectingElement.textContent = 'Could not connect to WebSocket server. Please refresh this page to try again!';
     connectingElement.style.color = 'red';
 }
-
 
 function sendMessage(event) {
     var messageContent = messageInput.value.trim();
@@ -68,18 +65,20 @@ function sendMessage(event) {
     event.preventDefault();
 }
 
-
 function onMessageReceived(payload) {
     var message = JSON.parse(payload.body);
 
     var messageElement = document.createElement('li');
-
+/*
+	var majorForm = document.getElementById("majorForm").selectedIndex;
+	var major = majorForm.value;
+*/
     if(message.type === 'JOIN') {
         messageElement.classList.add('event-message');
-        message.content = message.sender + ' joined!';
+        message.content = message.sender + ' from ' + major + ' has joined!';
     } else if (message.type === 'LEAVE') {
         messageElement.classList.add('event-message');
-        message.content = message.sender + ' left!';
+        message.content = message.sender + ' from ' + major + ' has left!';
     } else {
         messageElement.classList.add('chat-message');
 
@@ -105,7 +104,6 @@ function onMessageReceived(payload) {
     messageArea.appendChild(messageElement);
     messageArea.scrollTop = messageArea.scrollHeight;
 }
-
 
 function getAvatarColor(messageSender) {
     var hash = 0;
