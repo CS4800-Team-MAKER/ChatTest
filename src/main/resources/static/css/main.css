@@ -69,6 +69,7 @@ body:before {
 	overflow: hidden;
 	position: relative;
 	margin-top: -210px;
+	z-index: 2;
 }
 
 .topnav a {
@@ -94,6 +95,10 @@ body:before {
 	color: #ffffff;
 }
 */
+
+.topnav-right {
+	float: right;
+}
 .clearfix:after {
     display: block;
     content: "";
@@ -171,10 +176,11 @@ button.accent {
 
 #username-page {
     text-align: center;
+	color: #ffffff;
 }
 
 .username-page-container {
-    background: #fff;
+    background: #01426a;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     border-radius: 2px;
     width: 100%;
@@ -201,12 +207,33 @@ button.accent {
     position: relative;
     height: 100%;
 }
+/*
+.sidenav {
+	height: 100%%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: #01426a;
+	overflow-x: hidden;
+	padding-top: 20px;
+	right: 0;
+	margin-top: 400px;
+}
 
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #ffffff;
+	display: block;
+}
+*/
 .server-container {
 	max-width: 300px;
 	margin-left: auto;
 	margin-right: 10px;
-	background-color: #fff;
+	background-color: #01426a;
 	margin-top: 250px;
 	height: calc(100% - 10px);
 	max-height: 400px;
@@ -219,17 +246,19 @@ button.accent {
     text-align: center;
     padding: 5px;
     border-bottom: 1px solid #ececec;
+	color: #ffffff;
 }
 
-.server-header h2 {
+.server-header h5 {
     margin: 0;
     font-weight: 500;
+	color: #ffffff;
 }
 
 .chat-container {
     max-width: 700px;
 	margin-left: 610px;
-    background-color: #fff;
+    background-color: #01426a;
     margin-top: -470px;
     height: calc(100% - 60px);
     max-height: 600px;
@@ -238,7 +267,7 @@ button.accent {
 
 #chat-page ul {
     list-style-type: none;
-    background-color: #FFF;
+    background-color: #01426a;
     margin: 0;
     overflow: auto;
     overflow-y: scroll;
@@ -268,7 +297,7 @@ button.accent {
 }
 
 #chat-page .event-message p {
-    color: #777;
+    color: #ffffff;
     font-size: 14px;
     word-wrap: break-word;
 }
@@ -296,12 +325,12 @@ button.accent {
 }
 
 #chat-page .chat-message span {
-    color: #333;
+    color: #ffffff;
     font-weight: 600;
 }
 
 #chat-page .chat-message p {
-    color: #43464b;
+    color: #ffffff;
 }
 
 #title-page {
@@ -324,6 +353,7 @@ button.accent {
     text-align: center;
     padding: 15px;
     border-bottom: 1px solid #ececec;
+	color: #ffffff;
 }
 
 .chat-header h2 {

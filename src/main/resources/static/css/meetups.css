@@ -41,6 +41,11 @@ html,body {
 	color: #ffffff;
 }
 */
+
+.topnavs-right {
+	float: right;
+}
+
 body {
     margin: 0;
     padding: 0;
