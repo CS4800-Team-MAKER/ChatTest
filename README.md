@@ -18,6 +18,10 @@ Importing the Project into Eclipse
 2. Select the directory containing the pom.xml file
 3. Finish
 
+Run Project Locally
+
+1. Locate the WebsocketDemoApplication.java in src/main/java/com/example/websocketdemo and right-click on it->Run As->Java Application
+2. Verify at: 
 ```
 http://localhost:8080/
 ```
