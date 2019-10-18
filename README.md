@@ -35,9 +35,8 @@ http://localhost:8080/
 
 ## Authors
 
-* aaaaaaa
-* aaaaaaa
-* aaaaaaa
-* aaaaaaa
-* aaaaaaa
-* bbbbbbb
+* Alan Trieu
+* Eric Ramirez
+* Min Park
+* Roberto Ramirez
+* Kevin Lu
