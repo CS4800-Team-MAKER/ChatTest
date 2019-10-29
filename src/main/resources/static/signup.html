@@ -1,0 +1,88 @@
+<html><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Bronco Chat</title>
+	<link rel="stylesheet" href="/sign-up.css">
+	<script src="signup.js"></script>
+</head>
+<body>
+  <noscript>
+	<h2>Sorry! Your browser doesn't support Javascript</h2>
+  </noscript>
+
+
+  <div id="title-page">
+	  <div class="title-page-container">
+	  <h1><a href="/" style="color:#ffb500" class="title">Bronco Chat</a></h1>
+	  </div>
+  </div>
+
+  <div class="topnav">
+	<a class="active" href="/">Home</a>
+	<a href="/meetups">Meet Ups</a>
+	<a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+	<a href="about.html">About Us</a>
+	<a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
+  <div class="topnav-right">
+	  <a href="signup.html">Sign-up</a>
+  </div>
+  </div>
+
+    
+    <signup>
+        <div id="login-box">
+            <div class="login-box">
+				<h1>Sign Up</h1>
+				<form method="GET" action="/signup.php">
+                	<input type="text" name="email"autocomplete="off"  placeholder="Email" id="email" onchange="emailValidation()" required/><span id="emailValidation"></span>
+                	<input type="text" name="username" autocomplete="off" placeholder="Username" required/>
+                	<input type="password" name="password" autocomplete="off" placeholder="Password" id= "password" onchange="isSame()" required/><span id="lengthCheck"></span>
+					<input type="password" name="password2" autocomplete="off"  placeholder="Confirm password" id="password2" onchange="isSame()" required/><span id="same"></span>
+					<input type="submit" name="signup-button" autocomplete="off" value="Sign up".>
+				</form>
+            </div>
+        </div>
+    </signup>
+	
+	<div id="chat-page" class="hidden">
+  
+		<div class="server-container">
+			<div class="server-header">
+				<h2>List of Servers</h2>
+			</div>
+			<div class="server-list">
+				<h5><a href="/" style="color:#ffffff">College of Agriculture</a></h5>
+				<h5><a href="/" style="color:#ffffff">College of Business Administration</a></h5>
+				<h5><a href="/" style="color:#ffffff">College of Education &amp; Integrative Studies</a></h5>
+				<h5><a href="/" style="color:#ffffff">College of Engineering</a></h5>
+				<h5><a href="/" style="color:#ffffff">College of Environmental Design</a></h5>
+				<h5><a href="/" style="color:#ffffff">College of Hospitality Management</a></h5>
+				<h5><a href="/" style="color:#ffffff">College of Letters, Arts &amp; Social Sciences</a></h5>
+				<h5><a href="/science" style="color:#ffffff">College of Science</a></h5>
+			</div>
+		</div>
+		<div class="chat-container">
+			<div class="chat-header">
+				<h2>General Chat</h2>
+			</div>
+			<div class="connecting">
+				Connecting...
+			</div>
+			<ul id="messageArea">
+			</ul>
+			<form id="messageForm" name="messageForm">
+				<div class="form-group">
+					<div class="input-group clearfix">
+						<input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control">
+						<button type="submit" class="primary">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	<script src="/js/main.js"></script>
+  
+
+</body></html>
