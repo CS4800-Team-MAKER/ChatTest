@@ -22,21 +22,6 @@ body {
     height: 100%;
 }
 
-.title-page-container {
-	max-width: 350px;
-	font-family: Brush Script MT, Brush Script Std, cursive;
-	font-size: 35px;
-	text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #00843d;
-    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    margin-top: initial;
-    height: calc(100% - 60px);
-    max-height: 600px;
-    position: relative;
-}
-
 .meetups-page-container {
 	max-width: 100px;
 	font-family: Brush Script MT, Brush Script Std, cursive;
@@ -58,7 +43,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffb500;
+    background: #ffb700;
     content: "";
     z-index: 0;
 }
@@ -305,10 +290,6 @@ button.accent {
 
 #chat-page .chat-message p {
     color: #ffffff;
-}
-
-#title-page {
-	color: #FFD700;
 }
 
 #messageForm .input-group input {

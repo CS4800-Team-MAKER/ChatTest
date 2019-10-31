@@ -9,7 +9,7 @@ html,body {
     overflow: hidden;
 }
 
-/* bottom body */
+/*top body*/
 body {
     margin: 0;
     padding: 0;
@@ -20,21 +20,6 @@ body {
     color: #333;
     background-color: #00843d;
     height: 100%;
-}
-
-.title-page-container {
-	max-width: 350px;
-	font-family: Brush Script MT, Brush Script Std, cursive;
-	font-size: 41px;
-	text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #00843d;
-    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    margin-top: 100px;
-    height: calc(100% - 60px);
-    max-height: 600px;
-    position: relative;
 }
 
 .meetups-page-container {
@@ -58,7 +43,7 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffb500;
+    background: #ffb700;
     content: "";
     z-index: 0;
 }
@@ -68,7 +53,6 @@ body:before {
 	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
 	overflow: hidden;
 	position: relative;
-	margin-top: -210px;
 	z-index: 2;
 }
 
@@ -87,18 +71,11 @@ body:before {
 	background-position: right bottom;
 	color: #f4f4f4;
 }
-/*
-.topnav a.active {
-	background-color: #4CAF50;
-	background-position: right bottom;
-	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
-	color: #ffffff;
-}
-*/
 
 .topnav-right {
 	float: right;
 }
+
 .clearfix:after {
     display: block;
     content: "";
@@ -128,7 +105,7 @@ input {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-bottom: 20px;
-	margin-left: 10px;
+    margin-left: 10px;
 }
 
 h1 {
@@ -160,7 +137,7 @@ button.default {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
-/*send button */
+/*send button*/
 button.primary {
     background-color: #ffb500;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
@@ -176,7 +153,7 @@ button.accent {
 
 #username-page {
     text-align: center;
-	color: #ffffff;
+    color: #ffffff;
 }
 
 .username-page-container {
@@ -203,36 +180,16 @@ button.accent {
     margin-top: 10px;
 }
 
+
 #chat-page {
     position: relative;
-    height: 100%;
-}
-/*
-.sidenav {
-	height: 100%%;
-	width: 160px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	background-color: #01426a;
-	overflow-x: hidden;
-	padding-top: 20px;
-	right: 0;
-	margin-top: 400px;
+    height: 80%;
 }
 
-.sidenav a {
-	padding: 6px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 15px;
-	color: #ffffff;
-	display: block;
-}
-*/
 .server-container {
 	max-width: 300px;
 	margin-left: auto;
-	margin-right: 10px;
+	margin-right: -43%;
 	background-color: #01426a;
 	margin-top: 250px;
 	height: calc(100% - 10px);
@@ -257,12 +214,14 @@ button.accent {
 
 .chat-container {
     max-width: 700px;
-	margin-left: 610px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #01426a;
-    margin-top: -470px;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     height: calc(100% - 60px);
     max-height: 600px;
     position: relative;
+    margin-top: -17%
 }
 
 #chat-page ul {
@@ -333,10 +292,6 @@ button.accent {
     color: #ffffff;
 }
 
-#title-page {
-	color: #FFD700;
-}
-
 #messageForm .input-group input {
     float: left;
     width: calc(100% - 85px);
@@ -353,7 +308,8 @@ button.accent {
     text-align: center;
     padding: 15px;
     border-bottom: 1px solid #ececec;
-	color: #ffffff;
+    color: #ffffff;
+    margin-top: -59%
 }
 
 .chat-header h2 {
@@ -369,6 +325,7 @@ button.accent {
     top: 65px;
     width: 100%;
 }
+
 
 @media screen and (max-width: 730px) {
 
