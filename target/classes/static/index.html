@@ -1,110 +1,200 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-      <title>Bronco Chat</title>
-      <link rel="stylesheet" href="/css/main.css" />
-  </head>
-  <body>
-    <noscript>
-      <h2>Sorry! Your browser doesn't support Javascript</h2>
-    </noscript>
+	<head>
+		<title>BroncoChat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
 
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
 
-	<div id="title-page">
-		<div class="title-page-container">
-		<h1><a href="/" style="color:#ffb500" class="title">Bronco Chat</a></h1>
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Home</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="#">About</a>
+										<ul>
+											<li><a href="http://cs480-projects.github.io/teams-fall2019/Maker/index.html">Team Page</a></li>
+											<li>
+												<a href="#">Team Members</a>
+												<ul>
+													<li><a href="#">Alan</a></li>
+													<li><a href="#">Kevin</a></li>
+													<li><a href="#">Eric</a></li>
+													<li><a href="#">Min</a></li>
+													<li><a href="#">Roberto</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="meetups.html">Meetups</a></li>
+									<li class="break"><a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a></li>
+									<li><a href="https://github.com/CS4800-Team-MAKER/ChatTest">Github</a></li>
+								</ul>
+							</nav>
+
+					</div>
+
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2>Welcome to BroncoChat</h2>
+							</header>
+						</section>
+
+				</div>
+
+			<!-- Features 1 -->
+				<div class="wrapper">
+					<div class="container">
+							<div id="username-page">
+									<div class="username-page-container">
+										<h1 class="title">Enter a username</h1>
+										<form id="usernameForm" name="usernameForm">
+											<div class="form-group">
+												<input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
+											</div>
+										<h1 class="title">Select a college</h1>
+										<form id="majorForm" name="majorForm">
+										  <select name="major">
+											<option disabled selected value> -- Select an Option -- </option>
+											<option value="agriculture">College of Agriculture</option>
+											<option value="business">College of Business Administration</option>
+											<option value="education">College of Education & Integrative Studies</option>
+											<option value="engineering">College of Engineering</option>
+											<option value="environmentaldesign">College of Environmental Design</option>
+											<option value="hospitality">College of Hospitality Management</option>
+											<option value="class">College of Letters, Arts & Social Sciences</option>
+											<option value="science">College of Science</option>
+											
+										</form>
+											<div class="form-group">
+											</select>
+												<button type="submit" class="accent username-submit">Start Chatting</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							
+								<div id="chat-page" class="hidden">
+									
+									<div class="server-container">
+										<div class="server-header">
+											<h2>List of Servers</h2>
+										</div>
+										<div class="server-list">
+											<h5><a href="/" style="color:#ffffff">College of Agriculture</a></h5>
+											<h5><a href="/" style="color:#ffffff">College of Business Administration</a></h5>
+											<h5><a href="/" style="color:#ffffff">College of Education & Integrative Studies</a></h5>
+											<h5><a href="/" style="color:#ffffff">College of Engineering</a></h5>
+											<h5><a href="/" style="color:#ffffff">College of Environmental Design</a></h5>
+											<h5><a href="/" style="color:#ffffff">College of Hospitality Management</a></h5>
+											<h5><a href="/" style="color:#ffffff">College of Letters, Arts & Social Sciences</a></h5>
+											<h5><a href="/science" style="color:#ffffff">College of Science</a></h5>
+										</div>
+									</div>
+									<!--
+									<div class="sidenav">
+									  <a href="#">About</a>
+									  <a href="#">Services</a>
+									  <a href="#">Clients</a>
+									  <a href="#">Contact</a>
+									</div>
+									-->
+									<div class="chat-container">
+										<div class="chat-header">
+											<h2>General Chat</h2>
+										</div>
+										<div class="connecting">
+											Connecting...
+										</div>
+										<ul id="messageArea">
+										</ul>
+										<form id="messageForm" name="messageForm">
+											<div class="form-group">
+												<div class="input-group clearfix">
+													<input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+													<button type="submit" class="primary">Send</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>Have any questions?</h2>
+							<p>Please feel free to send us a message.</p>
+						</header>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<form method="post" action="#">
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobile">
+											<input name="name" placeholder="Name" type="text" />
+										</div>
+										<div class="col-6 col-12-mobile">
+											<input name="email" placeholder="Email" type="text" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" placeholder="Message"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+												<li><input type="reset" value="Clear form" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="row gtr-0">
+									<ul class="divided icons col-6 col-12-mobile">
+										<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
+										<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
+										<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>&copy; TEAM-MAKER. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+
 		</div>
-	</div>
-	
-	<div class="topnav">
-	  <a class="active" href="/">Home</a>
-	  <a href="/meetups">Meet Ups</a>
-	  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
-	  <a href="http://cs480-projects.github.io/teams-fall2019/Maker/index.html">About Us</a>
-	  <a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
-	<div class="topnav-right">
-		<a href="/">Sign-up</a>
-	</div>
-	</div>
 
-    <div id="username-page">
-        <div class="username-page-container">
-			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png">
-            <h1 class="title">Enter a username</h1>
-            <form id="usernameForm" name="usernameForm">
-                <div class="form-group">
-                    <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
-                </div>
-			<h1 class="title">Select a college</h1>
-			<form id="majorForm" name="majorForm">
-			  <select name="major">
-				<option disabled selected value> -- Select an Option -- </option>
-			    <option value="agriculture">College of Agriculture</option>
-			    <option value="business">College of Business Administration</option>
-			    <option value="education">College of Education & Integrative Studies</option>
-			    <option value="engineering">College of Engineering</option>
-				<option value="environmentaldesign">College of Environmental Design</option>
-				<option value="hospitality">College of Hospitality Management</option>
-				<option value="class">College of Letters, Arts & Social Sciences</option>
-				<option value="science">College of Science</option>
-				
-			</form>
-                <div class="form-group">
-				</select>
-                    <button type="submit" class="accent username-submit">Start Chatting</button>
-                </div>
-            </form>
-        </div>
-    </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/chat.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 
-    <div id="chat-page" class="hidden">
-		
-		<div class="server-container">
-			<div class="server-header">
-				<h2>List of Servers</h2>
-			</div>
-			<div class="server-list">
-				<h5><a href="/" style="color:#ffffff">College of Agriculture</a></h5>
-				<h5><a href="/" style="color:#ffffff">College of Business Administration</a></h5>
-				<h5><a href="/" style="color:#ffffff">College of Education & Integrative Studies</a></h5>
-				<h5><a href="/" style="color:#ffffff">College of Engineering</a></h5>
-				<h5><a href="/" style="color:#ffffff">College of Environmental Design</a></h5>
-				<h5><a href="/" style="color:#ffffff">College of Hospitality Management</a></h5>
-				<h5><a href="/" style="color:#ffffff">College of Letters, Arts & Social Sciences</a></h5>
-				<h5><a href="/science" style="color:#ffffff">College of Science</a></h5>
-			</div>
-		</div>
-		<!--
-		<div class="sidenav">
-		  <a href="#">About</a>
-		  <a href="#">Services</a>
-		  <a href="#">Clients</a>
-		  <a href="#">Contact</a>
-		</div>
-		-->
-        <div class="chat-container">
-            <div class="chat-header">
-                <h2>General Chat</h2>
-            </div>
-            <div class="connecting">
-                Connecting...
-            </div>
-            <ul id="messageArea">
-            </ul>
-            <form id="messageForm" name="messageForm">
-                <div class="form-group">
-                    <div class="input-group clearfix">
-                        <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
-                        <button type="submit" class="primary">Send</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
-    <script src="/js/main.js"></script>
-  </body>
+	</body>
 </html>

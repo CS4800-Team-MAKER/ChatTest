@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="/css/meetups.css" />
+		<title>Meet Ups</title>
+	</head>
+
+<body>
+
+	<div class="topnavs">
+	  <a href="/">Home</a>
+	  <a class="active" href="/meetups">Meet Ups</a>
+	  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+	  <a href="http://cs480-projects.github.io/teams-fall2019/Maker/index.html">About Us</a>
+	  <a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
+		<div class="topnavs-right">
+			<a href="/">Sign-up</a>
+		</div>
+	</div>
+
+	
+	<div id="container">
+		<div id="header">
+			<h2>Bronco Chat Meet Ups</h2>
+		</div>
+		<div id="content">
+
+			<div id="form" class="formModal">
+				<div class="form-content">
+					<div class="form-header">
+						<span class="closeFormBtn">&times;</span>
+						<h2>Form header</h2>
+					</div>
+					<form action="process.php" method="POST">
+						<div>
+							<label>First Name</label>                                       <!-- The value attribute adds text to the input box -->
+							<input type="text" name="first-name" value="Enter first name">  <!-- that must be deleted before actual submission-->     
+						</div>
+						<br>
+						<div>
+							<label>Last Name</label>
+							<input type="text" name="first-name" placeholder="Enter last name here">    <!-- The (placeholder) attribute adds a light grey text to the input box, before -->
+						</div>
+						<br>
+						<div>
+							<label>Email</label>
+							<input type="email" name="email"> <!-- HTML 5 has added an email type that checks the string structure and gives errors-->
+						</div>
+						<br>
+						<div>
+							<label>Message</label>
+							<textarea name="message"></textarea> <!-- A bigger text area field -->
+						</div>
+						<br>
+						<div>
+							<label>Gender</label>
+							<select name="Gender">
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<br>
+						<div>
+							<label>Age</label>
+							<input type="number" name="age">
+						</div>
+						<br>
+						<div>
+							<label>Birthday</label>
+							<input type="date" name="birthday">
+						</div>
+						<br>
+						<input type="submit" name="submit" value="Submit"> <!-- It would get processed by process.php because that is the action of the form but it does not actually exist-->
+					</form>
+				</div>
+			</div>
+
+			<div id="simpleModal" class="modal">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<span class="closeBtn">&times;</span>
+							<h2>Modal header</h2>
+						</div>
+					
+						<div class="modal-body">
+							<p>Body of modal</p>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptatibus, 
+								nostrum sit eius optio fugit obcaecati vel consequatur odio perferendis aperiam 
+								quis, est velit aliquam, hic blanditiis minus? Distinctio, officia.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<h3>modal footer</h3>
+						</div>
+					</div>
+				</div>
+
+			<table class="meetups">
+			<!--<table cellpadding="4" cellspacing="0"> -->
+				<tr bgcolor="#DFDFDF">
+					<th align="center">Location</th>
+					<th align="center">Sign Ups</th>
+					<th align="center">Date</th>
+					<th align="center">Additional Comments</th>				
+				</tr>
+				<tr>
+					<td valign="top"><a id="modalBtn" href="#">Starbucks</a></td>
+					<td valign="top">10</td>
+					<td valign="top">12/4/19</td>
+					<td valign="top">CS 4800 hang out</td>
+				</tr>
+		        <tr>
+					<td valign="top">Spot an error?</td>
+					<td valign="top"></td>
+					<td valign="top">Contact <a href="#">GitHub</a></td>
+				</tr>
+				<tr>
+					<td><a id="formBtn" href="#">  Enter new meetup</a></td>
+				</tr>
+			</table>
+		</div>	
+	</div>
+	<script src="js/meetup.js"></script>
+</body>
+</html>
