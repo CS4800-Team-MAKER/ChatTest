@@ -8,7 +8,7 @@ A way to connect with fellow Cal Poly Pomona Students
 
 ![App Screenshot](images/Capture.PNG)
 ![App Screenshot](images/Capture2.PNG)
-![App Screenshot](images/Capture3.png)
+![App Screenshot](images/Capture3.PNG)
 
 ## How to run
 
@@ -26,12 +26,12 @@ Run Project Locally
 http://localhost:8080/
 ```
 
-## Built With
+## Features
 
-* aaaaaaa
-* aaaaaaa
-* aaaaaaa
-* aaaaaaa
+* User Sign up and Login
+* Chat Rooms for specific college
+* Schedule events on Meetup page 
+* Built with Spring Boot
 
 ## Authors
 

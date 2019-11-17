@@ -9,6 +9,21 @@ html,body {
     overflow: hidden;
 }
 
+.title-page-container {
+	max-width: 350px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 41px;
+	text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #01426a;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: 70px;
+    height: calc(100% - 60px);
+    max-height: 600px;
+    position: relative;
+}
+
 /*top body*/
 body {
     margin: 0;
@@ -191,7 +206,7 @@ button.accent {
 	margin-left: auto;
 	margin-right: -43%;
 	background-color: #01426a;
-	margin-top: 250px;
+	margin-top: 420px;
 	height: calc(100% - 10px);
 	max-height: 400px;
 	position: relative;

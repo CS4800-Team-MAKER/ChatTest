@@ -1,6 +1,7 @@
 'use strict';
 
 var usernamePage = document.querySelector('#username-page');
+var titlePage = document.querySelector('#title-page');
 var chatPage = document.querySelector('#chat-page');
 var usernameForm = document.querySelector('#usernameForm');
 //var majorForm = document.querySelector('#majorForm');
@@ -18,14 +19,28 @@ var colors = [
     '#ffc107', '#ff85af', '#FF9800', '#39bbb0'
 ];
 
+/*
+function getOption(){
+	var major = document.getElementById("majorForm");
+	document.getElementById("demo").innerHTML = 
+	major.options[major.selectedIndex].text;
+}
+*/
+
 function connect(event) {
     username = document.querySelector('#name').value.trim();
 
     if(username) {
         usernamePage.classList.add('hidden');
+		titlePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
         var socket = new SockJS('/ws');
+/*
+		var multiplexer = new MultiplexedWebSocket(socket);
+		var fake_sockjs_1 = multiplexer.channel('one');
+		var fake_sockjs_2 = multiplexer.channel('two');
+*/		
         stompClient = Stomp.over(socket);
 
         stompClient.connect({}, onConnected, onError);
@@ -74,9 +89,11 @@ function onMessageReceived(payload) {
 	var major = majorForm.value;
 */
     if(message.type === 'JOIN') {
+		//getOption();
         messageElement.classList.add('event-message');
         message.content = message.sender + ' from ' + major + ' has joined!';
     } else if (message.type === 'LEAVE') {
+		//getOption();
         messageElement.classList.add('event-message');
         message.content = message.sender + ' from ' + major + ' has left!';
     } else {

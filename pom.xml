@@ -30,22 +30,26 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- RabbitMQ Starter Dependency -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 
-		<!-- Following additional dependency is required for Full Featured STOMP Broker Relay -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-reactor-netty</artifactId>
 		</dependency>
 
 		<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.10.2</version>
+        </dependency> 
 
 
 	</dependencies>
