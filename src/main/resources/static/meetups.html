@@ -32,6 +32,26 @@
 		</div>
 		<div id="content">
 
+		<div id="simpleModal" class="modal">
+			<div class="modal-content">
+					
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h2>CS 4800 hang out</h2>
+				</div>
+				
+				<div class="modal-body">
+					<p>
+						Description: Meet at Starbucks for project celebration.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<h3>Going: 10    <button>Join</button></h3>
+					
+				</div>
+			</div>
+		</div>
+
 		<table class="meetups">
 			<!--<table cellpadding="4" cellspacing="0"> -->
 				<tr bgcolor="#DFDFDF">
@@ -41,7 +61,7 @@
 					<th align="center">Additional Comments</th>
 				</tr>
 				<tr>
-					<td valign="top"><a href="#">Starbucks</a></td>
+					<td valign="top"><a id="modalBtn" href="#">Starbucks</a></td>
 					<td valign="top">10</td>
 					<td valign="top">12/4/19</td>
 					<td valign="top">CS 4800 hang out</td>
@@ -66,6 +86,6 @@
 			</table>
 		</div>
 	</div>
-
+	<script src="js/meetups.js"></script>
 </body>
 </html>
