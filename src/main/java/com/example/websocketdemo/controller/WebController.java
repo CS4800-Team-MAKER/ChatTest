@@ -30,6 +30,11 @@ public class WebController {
 	    return "signup.html";
 	}
 	
+	@RequestMapping(value = "/discover", method = RequestMethod.GET)
+	public String discover() {
+	    return "discover.html";
+	}
+	
 	@RequestMapping(value = "/about", method = RequestMethod.GET)
 	public String about() {
 	    return "about.html";

@@ -8,7 +8,7 @@ A way to connect with fellow Cal Poly Pomona Students
 
 ![App Screenshot](images/Capture.PNG)
 ![App Screenshot](images/Capture2.PNG)
-![App Screenshot](images/Capture3.PNG)
+![App Screenshot](images/Capture3.png)
 
 ## How to run
 
