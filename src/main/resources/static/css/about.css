@@ -55,7 +55,7 @@ body {
     font-size: 1rem;
     line-height: 1.58;
     color: #333;
-    background-color: #ffb500;
+    background-color: #f8f8f8;
     height: 100%;
 }
 
@@ -65,14 +65,56 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffb500;
+    background: #f8f8f8;
     content: "";
     z-index: 0;
 }
 
-#header{
-    background: #00843d;
-	color: #ffb500;
-	position: relative;
+.container{
+    width: 75%;           /* the width of the block, can use pixels, 960px, but percentages are better because it changes dynamically, the page is responsive */
+	margin: auto;           /* equal amount of margin on each side*/
 }
 
+h1{
+	text-align: center;
+	color: #000;
+}
+
+h3{
+	text-align: center;
+	margin: 0%;
+	padding: 0%;
+	color: #000;
+}
+
+p{
+	text-align: center;
+	font-size: 140%;
+	color: #000;
+}
+
+.column {
+	float: left;
+	width: 20%;
+  }
+
+  .column img{
+	  width: 115px;
+	  height: 115px;
+	  display:	block;
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+
+ 
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  #header{
+	  color: #000;
+	  position: relative;
+  }
