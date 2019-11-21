@@ -3,88 +3,94 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="/css/meetups.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<title>Meet Ups</title>
 	</head>
 
 <body>
 
 	<div class="topnavs">
-	  <a href="/">Home</a>
-	  <a href="/meetups">Meet Ups</a>
-	  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
-	  <a href="about.html">About Us</a>
-	  <a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
-	<div class="topnavs-right">
-		<a href="/signup">Sign-Up</a>
-	</div>
-	<div class="topnavs-right">
+		<a href="/">Home</a>
+		<a href="/meetups">Meet Ups</a>
+		<a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+		<a href="about.html">About Us</a>
+		<a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
+		<div class="topnavs-right">
+			<a href="/signup">Sign-Up</a>
+		</div>
+		<div class="topnavs-right">
 			<a href="/login">Log-In</a>
 		</div>
-	<div class="topnavs-right">
-		<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
-	</div>
-	</div>
-
-	<div id="container">
-		<div id="header">
-			<h2>Bronco Chat Meet Ups</h2>
+		<div class="topnavs-right">
+			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
 		</div>
-		<div id="content">
+	</div>
 
-		<div id="simpleModal" class="modal">
-			<div class="modal-content">
-					
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h2>CS 4800 hang out</h2>
+	<div class="jumbotron text-center">
+			<h1 class="display-4">Create an event on Campus!</h1>
+			<p class="lead">
+				Start or find new communities.
+			</p>
+			<hr class="my-4">
+			<p>Click to learn more about the service</p>
+			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		  </div>
+
+	<div class="container">
+		<div class="card-deck">
+			<div class="card">
+				<img src="images/buildings/library_1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">PLS2060-01</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Libray Room 3rd Floor</h6>
+					<p class="card-text">talk about the debates</p>
 				</div>
-				
-				<div class="modal-body">
-					<p>
-						Description: Meet at Starbucks for project celebration.
-					</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 1 hour ago</small>
+				 </div>
+			</div>
+			
+			<div class="card">
+				<img src="images/buildings/bric_1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Basketball 3v3</h5>
+					<h6 class="card-subtitle mb-2 text-muted">BRIC</h6>
+					<p class="card-text">Need two more players.</p>
 				</div>
-				<div class="modal-footer">
-					<h3>Going: 10    <button>Join</button></h3>
-					
+				<div class="card-footer">
+					<small class="text-muted">Last updated 1 day ago</small>
 				</div>
 			</div>
+			
+			<div class="card">
+				<img src="images/buildings/gamesroom_1.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Smash Bros. Tourament</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Games Room</h6>
+					<p class="card-text"></p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 2 days ago</small>
+				</div>
+			</div>
+
+			<div class="card">
+					<img src="images/buildings/building8_1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">CS3800 Study Group</h5>
+						<h6 class="card-subtitle mb-2 text-muted">CS Lab</h6>
+						<p class="card-text">Review for quiz</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 2 days ago</small>
+					</div>
+				</div>
+
 		</div>
 
-		<table class="meetups">
-			<!--<table cellpadding="4" cellspacing="0"> -->
-				<tr bgcolor="#DFDFDF">
-					<th align="center">Location</th>
-					<th align="center">Sign Ups</th>
-					<th align="center">Date</th>
-					<th align="center">Additional Comments</th>
-				</tr>
-				<tr>
-					<td valign="top"><a id="modalBtn" href="#">Starbucks</a></td>
-					<td valign="top">10</td>
-					<td valign="top">12/4/19</td>
-					<td valign="top">CS 4800 hang out</td>
-				</tr>
-				<tr>
-					<td valign="top"><a href="#">Carls Jr.</a></td>
-					<td valign="top">14</td>
-					<td valign="top">12/14/19</td>
-					<td valign="top">Bring extra cups</td>
-				</tr>
-				<tr>
-					<td valign="top"><a href="#">Bldg. 8 301</a></td>
-					<td valign="top">6</td>
-					<td valign="top">11/24/19</td>
-					<td valign="top">Club meetup!</td>
-				</tr>
-		        <tr>
-					<td valign="top">Spot an error?</td>
-					<td valign="top"></td>
-					<td valign="top">Contact <a href="#">GitHub</a></td>
-				</tr>
-			</table>
-		</div>
 	</div>
+
 	<script src="js/meetups.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
