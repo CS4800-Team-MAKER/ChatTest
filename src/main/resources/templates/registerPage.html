@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title th:utext="${title}"></title>
+	  <link rel="stylesheet" href="/css/registerPage.css" />
+      <style>
+         th, td {
+         padding: 5px;
+         }
+         td span  {
+         font-size:90%;
+         font-style: italic;
+         color: red;
+         }
+         .error {
+         color: red;
+         font-style: italic;
+         }
+      </style>
+   </head>
+   <body>
+		<div class="topnavs">
+		  <a href="/">Home</a>
+		  <a href="/meetups">Meet Ups</a>
+		  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+		  <a href="/about">About Us</a>
+		  <a href="https://docs.google.com/presentation/d/1QrJQcd8bTNokikVI27NCgqzTkAspKn0uk7QUiuAzXak/edit?usp=sharing">Presentation</a>
+		<div class="topnavs-right">
+			<a href="/signup">Sign-Up</a>
+		</div>
+	
+		<div class="topnavs-right">
+				<a href="/login">Log-In</a>
+		</div>
+		<div class="topnavs-right">
+			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
+		</div>
+		</div>
+		
+		<a th:href="@{/members}">Events</a>
+ 
+     | &nbsp;
+ 
+   		<a th:href="@{/register}">Register</a>
+       
+      <h2> Register your event!</h2>
+       
+      <div th:if="${errorMessage != null}"
+           th:utext="${errorMessage}" class="error">...</div>
+       
+      <form th:action="@{/register}" th:object="${appUserForm}" method="POST">
+         <table>
+            <tr>
+               <td>Name of Event</td>
+               <td><input type="text" th:field="*{userName}" /></td>
+               <td>
+                  <span th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}">..</span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>Register Code</td>
+               <td><input type="password" th:field="*{password}" /> </td>
+               <td>
+                  <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}">..</span>
+               </td>
+            </tr>
+            <tr>
+               <td>Confirm Code</td>
+               <td><input type="password" th:field="*{confirmPassword}" /> </td>
+               <td>
+                  <span th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}">..</span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>Email</td>
+               <td><input type="text" th:field="*{email}" /> </td>
+               <td>
+                  <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}">..</span>
+               </td>
+            </tr>
+            <tr>
+               <td>First Name</td>
+               <td><input type="text" th:field="*{firstName}" /> </td>
+               <td>
+                  <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">..</span>
+               </td>
+            </tr>
+            <tr>
+               <td>Last Name</td>
+               <td><input type="text" th:field="*{lastName}" /> </td>
+               <td>
+                  <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">..</span>
+               </td>
+            </tr>
+            <tr>
+               <td>Description</td>
+               <td><input type="text" th:field="*{gender}" /> </td>
+               <td>
+                  <span th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}">..</span>
+               </td>
+            </tr>
+            <tr>
+               <td>Location</td>
+               <td>
+                  <select th:field="*{countryCode}">
+                     <option value=""> -- </option>
+                     <option th:each="country : ${countries}"
+                        th:value="${country.countryCode}"
+                        th:utext="${country.countryName}"/>
+                  </select>
+               <td><span th:if="${#fields.hasErrors('countryCode')}" th:errors="*{countryCode}">..</span></td>
+            </tr>
+            <tr>
+               <td>&nbsp;</td>
+               <td>
+                  <input type="submit" value="Submit" />
+                  <a th:href="@{/meetups}">Cancel</a>
+               </td>
+               <td>&nbsp;</td>
+            </tr>
+         </table>
+      </form>
+       
+   </body>
+</html>

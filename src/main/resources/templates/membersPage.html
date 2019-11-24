@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title th:utext="${title}"></title>
+	  <link rel="stylesheet" href="/css/membersPage.css" />
+   </head>
+    
+   <style>
+      table th, table td {
+         padding: 5px;
+      }
+      .message {
+         color: blue;
+      }
+   </style>
+    
+   <body>
+    
+		<div class="topnavs">
+		  <a href="/">Home</a>
+		  <a href="/meetups">Meet Ups</a>
+		  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+		  <a href="/about">About Us</a>
+		  <a href="https://docs.google.com/presentation/d/1QrJQcd8bTNokikVI27NCgqzTkAspKn0uk7QUiuAzXak/edit?usp=sharing">Presentation</a>
+		<div class="topnavs-right">
+			<a href="/signup">Sign-Up</a>
+		</div>
+	
+		<div class="topnavs-right">
+				<a href="/login">Log-In</a>
+		</div>
+		<div class="topnavs-right">
+			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
+		</div>
+		</div>
+       
+
+   <a th:href="@{/members}">Events</a>
+ 
+     | &nbsp;
+ 
+   <a th:href="@{/register}">Register</a>
+
+
+      <h2>Events</h2>    
+       
+      <table border="1">
+            <tr>
+               <th>Event Name</th>
+		 	   <th>Location</th>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Email</th>
+               <th>Description</th>
+            </tr>
+            <tr th:each ="member : ${members}">
+               <td th:utext="${member.userName}">...</td>
+			   <td th:utext="${member.countryCode}">...</td>
+               <td th:utext="${member.firstName}">...</td>
+               <td th:utext="${member.lastName}">...</td>
+               <td th:utext="${member.email}">...</td>
+               <td th:utext="${member.gender}">...</td>
+            </tr>
+      </table>
+       
+   </body>
+</html>

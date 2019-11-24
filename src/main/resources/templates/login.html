@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<title>Bronco Chat</title>
+		<link rel="stylesheet" href="/css/sign-up.css">
+		<script src="/js/signup.js"></script>
+	</head>
+<body>
+  <noscript>
+	<h2>Sorry! Your browser doesn't support Javascript</h2>
+  </noscript>
+
+  <div class="topnav">
+	<a class="active" href="/">Home</a>
+	<a href="/meetups">Meet Ups</a>
+	<a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+	<a href="about.html">About Us</a>
+	<a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
+		<div class="topnav-right">
+			<a href="/signup">Sign-Up</a>
+		</div>
+		<div class="topnav-right">
+			<a href="/login">Log-In</a>
+		</div>
+		<div class="topnav-right">
+			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
+		</div>
+  </div>
+
+    <signup>
+        <div id="login-box">
+            <div class="login-box">
+				<h1>Log In</h1>
+				<form method="GET" action="/signup.php">
+                	<input type="text" name="email"autocomplete="off"  placeholder="Email" id="email"  required/>
+                	<input type="password" name="password" autocomplete="off" placeholder="Password" id= "password"  required/>
+					<input type="submit" name="signup-button" autocomplete="off" value="Log In".>
+				</form>
+            </div>
+        </div>
+    </signup>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+	<script src="/js/main.js"></script>
+
+
+</body></html>

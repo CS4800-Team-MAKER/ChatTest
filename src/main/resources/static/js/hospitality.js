@@ -91,11 +91,11 @@ function onMessageReceived(payload) {
     if(message.type === 'JOIN') {
 		//getOption();
         messageElement.classList.add('event-message');
-        message.content = message.sender + ' from ' + major + ' has joined!';
+        message.content = message.sender + ' has joined!';
     } else if (message.type === 'LEAVE') {
 		//getOption();
         messageElement.classList.add('event-message');
-        message.content = message.sender + ' from ' + major + ' has left!';
+        message.content = message.sender + ' has left!';
     } else {
         messageElement.classList.add('chat-message');
 

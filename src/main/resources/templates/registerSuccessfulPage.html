@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>Successfully registered</title>
+      <link rel="stylesheet" href="/css/registerPage.css" />
+      <style>
+        span {color: blue;}
+      </style>
+   </head>
+    
+   <body>
+    	<div class="topnavs">
+		  <a href="/">Home</a>
+		  <a href="/meetups">Meet Ups</a>
+		  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+		  <a href="/about">About Us</a>
+		  <a href="https://docs.google.com/presentation/d/1QrJQcd8bTNokikVI27NCgqzTkAspKn0uk7QUiuAzXak/edit?usp=sharing">Presentation</a>
+		<div class="topnavs-right">
+			<a href="/signup">Sign-Up</a>
+		</div>
+	
+		<div class="topnavs-right">
+				<a href="/login">Log-In</a>
+		</div>
+		<div class="topnavs-right">
+			<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
+		</div>
+		</div>
+
+       
+      <h2>You have successfully registered!</h2>
+       
+      <div th:if="${flashUser != null}">
+         <ul>
+            <li>Event Name: <span th:utext="${flashUser.userName}">..</span></li>
+            <li>Email: <span th:utext="${flashUser.email}">..</span></li>
+         </ul>
+      </div>
+
+<form action="/members">
+    <input type="submit" value="Events!" />
+</form>
+      
+       
+   </body>
+</html>

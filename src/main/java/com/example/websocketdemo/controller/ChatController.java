@@ -69,9 +69,39 @@ public class ChatController {
     @SendTo("/topic/public")
     public ChatMessage addUser(@Payload ChatMessage chatMessage, 
                                SimpMessageHeaderAccessor headerAccessor) {
-        // Add username in web socket session
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         return chatMessage;
     }
-
+    //science
+    @MessageMapping("/chat.addUser2")
+    @SendTo("/topic/public2")
+    public ChatMessage addUser2(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
+    //ag
+    @MessageMapping("/chat.addUser3")
+    @SendTo("/topic/public3")
+    public ChatMessage addUser3(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
+    //business
+    @MessageMapping("/chat.addUser4")
+    @SendTo("/topic/public4")
+    public ChatMessage addUser4(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
+    //education
+    @MessageMapping("/chat.addUser5")
+    @SendTo("/topic/public5")
+    public ChatMessage addUser5(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
 }
