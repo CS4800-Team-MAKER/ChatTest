@@ -18,11 +18,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return bCryptPasswordEncoder;
     }
  
-    // In this example we do not use Security.
-    // Override this method with empty code
-    // to disable the default Spring Boot security.
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // Empty code!
+    	
     }
 }
