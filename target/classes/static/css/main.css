@@ -23,7 +23,6 @@ html,body {
     position: relative;
 }
 
-/*top body*/
 body {
     margin: 0;
     padding: 0;
@@ -32,7 +31,7 @@ body {
     font-size: 1rem;
     line-height: 1.58;
     color: #333;
-    background-color: #00843d;
+    background-color: #ffb700;
     height: 100%;
 }
 
@@ -52,12 +51,12 @@ body {
 
 /*top body*/
 body:before {
-    height: 50%;
+    height: 85%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffb700;
+    background: #00843d;
     content: "";
     z-index: 0;
 }

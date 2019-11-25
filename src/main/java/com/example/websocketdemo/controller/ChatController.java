@@ -104,4 +104,36 @@ public class ChatController {
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         return chatMessage;
     }
+    //eng
+    @MessageMapping("/chat.addUser6")
+    @SendTo("/topic/public6")
+    public ChatMessage addUser6(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
+    //environmentaldesign
+    @MessageMapping("/chat.addUser7")
+    @SendTo("/topic/public7")
+    public ChatMessage addUser7(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
+    //hospital
+    @MessageMapping("/chat.addUser8")
+    @SendTo("/topic/public8")
+    public ChatMessage addUser8(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
+    //class
+    @MessageMapping("/chat.addUser9")
+    @SendTo("/topic/public9")
+    public ChatMessage addUser9(@Payload ChatMessage chatMessage, 
+                               SimpMessageHeaderAccessor headerAccessor) {
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        return chatMessage;
+    }
 }

@@ -24,12 +24,14 @@ public class CountryDAO {
         Country fr = new Country("Games Room", "Games Room");
         Country us = new Country("Starbucks", "Starbucks");
         Country ru = new Country("CS Lab", "CS Lab");
+        Country bs = new Country("BSC", "BSC");
  
         COUNTRIES_MAP.put(vn.getCountryCode(), vn);
         COUNTRIES_MAP.put(en.getCountryCode(), en);
         COUNTRIES_MAP.put(fr.getCountryCode(), fr);
         COUNTRIES_MAP.put(us.getCountryCode(), us);
         COUNTRIES_MAP.put(ru.getCountryCode(), ru);
+        COUNTRIES_MAP.put(bs.getCountryCode(), bs);
     }
  
     public Country findCountryByCode(String countryCode) {

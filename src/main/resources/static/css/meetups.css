@@ -47,6 +47,15 @@ html,body {
 .topnavs-right {
 	float: right;
 }
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+  display: flex;
+}
 /*
 body {
     margin: 0;

@@ -33,10 +33,8 @@ public class MainController {
    @Autowired
    private AppUserValidator appUserValidator;
  
-   // Set a form validator
    @InitBinder
    protected void initBinder(WebDataBinder dataBinder) {
-      // Form target
       Object target = dataBinder.getTarget();
       if (target == null) {
          return;
@@ -46,16 +44,24 @@ public class MainController {
       if (target.getClass() == AppUserForm.class) {
          dataBinder.setValidator(appUserValidator);
       }
-      // ...
    }
  
+	@RequestMapping(value = "/meetups", method = RequestMethod.GET)
+	public String meetups(Model model) {
+	    List<AppUser> list = appUserDAO.getAppUsers();
+	      
+	    model.addAttribute("members", list);
+	    
+	    return "meetups.html";
+	}
+	
    @RequestMapping("/")
    public String viewHome(Model model) {
  
       return "welcomePage";
    }
  
-   @RequestMapping("/members")
+   @RequestMapping("/events")
    public String viewMembers(Model model) {
  
       List<AppUser> list = appUserDAO.getAppUsers();
@@ -71,7 +77,6 @@ public class MainController {
       return "registerSuccessfulPage";
    }
  
-   // Show Register page.
    @RequestMapping(value = "/register", method = RequestMethod.GET)
    public String viewRegister(Model model) {
  
@@ -84,16 +89,12 @@ public class MainController {
       return "registerPage";
    }
  
-   // This method is called to save the registration information.
-   // @Validated: To ensure that this Form
-   // has been Validated before this method is invoked.
    @RequestMapping(value = "/register", method = RequestMethod.POST)
    public String saveRegister(Model model, //
          @ModelAttribute("appUserForm") @Validated AppUserForm appUserForm, //
          BindingResult result, //
          final RedirectAttributes redirectAttributes) {
  
-      // Validate result
       if (result.hasErrors()) {
          List<Country> countries = countryDAO.getCountries();
          model.addAttribute("countries", countries);
@@ -103,7 +104,6 @@ public class MainController {
       try {
          newUser = appUserDAO.createAppUser(appUserForm);
       }
-      // Other error!!
       catch (Exception e) {
          List<Country> countries = countryDAO.getCountries();
          model.addAttribute("countries", countries);

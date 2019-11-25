@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
    <head>
-      <title th:utext="${title}"></title>
+      <title th:utext="Register"></title>
 	  <link rel="stylesheet" href="/css/registerPage.css" />
       <style>
          th, td {
@@ -37,7 +37,7 @@
 		</div>
 		</div>
 		
-		<a th:href="@{/members}">Events</a>
+		<a th:href="@{/events}">Events</a>
  
      | &nbsp;
  
@@ -88,7 +88,7 @@
                </td>
             </tr>
             <tr>
-               <td>Last Name</td>
+               <td>Date of Event</td>
                <td><input type="text" th:field="*{lastName}" /> </td>
                <td>
                   <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">..</span>

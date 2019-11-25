@@ -1,6 +1,7 @@
 package com.example.websocketdemo.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -11,15 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.websocketdemo.model.AppUser;
+
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class WebController {
-	@RequestMapping(value = "/meetups", method = RequestMethod.GET)
-	public String meetups() {
-	    return "meetups.html";
-	}
-	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {
 	    return "login.html";

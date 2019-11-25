@@ -29,16 +29,16 @@ public class AppUserDAO {
     private static void initDATA() {
         String encrytedPassword = "";
  
-        AppUser alan = new AppUser(1L, "PLS2060-01", "Alan", "Trieu", //
+        AppUser alan = new AppUser(1L, "PLS2060-01", "Alan", "11/30", //
                 true, "talk about the debates", "aptrieu@cpp.edu", "Library", encrytedPassword);
  
-        AppUser alan2 = new AppUser(2L, "Basketball 3v3", "Alan", "Trieu", //
+        AppUser alan2 = new AppUser(2L, "Basketball 3v3", "Alan", "12/2 2PM", //
                 true, "Need two more players.", "aptrieu@cpp.edu", "BRIC", encrytedPassword);
         
-        AppUser alan3 = new AppUser(3L, "Smash Bros. Tourament", "Alan", "Trieu", //
-                true, "None", "aptrieu@cpp.edu", "Games Room", encrytedPassword);
+        AppUser alan3 = new AppUser(3L, "Smash Tourament", "Alan", "12/4 8PM", //
+                true, "", "aptrieu@cpp.edu", "Games Room", encrytedPassword);
         
-        AppUser alan4 = new AppUser(4L, "CS3800 Study Group", "Alan", "Trieu", //
+        AppUser alan4 = new AppUser(4L, "CS3800 Study Group", "Alan", "12/2 12PM", //
                 true, "Review for quiz", "aptrieu@cpp.edu", "CS Lab", encrytedPassword);
  
         USERS_MAP.put(alan.getUserId(), alan);

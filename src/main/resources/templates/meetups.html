@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+		<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<link rel="stylesheet" href="/css/meetups.css" />
@@ -32,11 +32,14 @@
 				Start or find new communities.
 			</p>
 			<hr class="my-4">
-			<p>Click to learn more about the service</p>
-			<a class="btn btn-primary btn-lg" th:href="@{/register}" role="button">Learn more</a>
+			<p>Click here to register your event</p>
+			<a class="btn btn-primary btn-lg" th:href="@{/register}" role="button">Register</a>
 		  </div>
 
 	<div class="container">
+		<div class="row">
+		 <div class="col-12">
+	<!--
 		<div class="card-deck">
 			<div class="card">
 				<img src="images/buildings/library_1.jpg" class="card-img-top" alt="...">
@@ -46,7 +49,7 @@
 					<p class="card-text">talk about the debates</p>
 				</div>
 				<div class="card-footer">
-					<small class="text-muted">Last updated 1 hour ago</small>
+					<small class="text-muted">Last updated 5 days ago</small>
 				 </div>
 			</div>
 			
@@ -58,7 +61,7 @@
 					<p class="card-text">Need two more players.</p>
 				</div>
 				<div class="card-footer">
-					<small class="text-muted">Last updated 1 day ago</small>
+					<small class="text-muted">Last updated 3 days ago</small>
 				</div>
 			</div>
 			
@@ -85,12 +88,47 @@
 						<small class="text-muted">Last updated 2 days ago</small>
 					</div>
 				</div>
+			-->
+			<tr th:each ="member : ${members}">
+			<div class="card">
+					<th:block th:switch="${member.countryCode}">
+					    <div th:case="'CS Lab'">
+					        <img src="images/buildings/building8_1.jpg" class="card-img-top" alt="..." height="160" width="220">
+					    </div>
+					    <div th:case="'Games Room'">
+					        <img src="images/buildings/gamesroom_1.jpg" class="card-img-top" alt="..." height="160" width="220">
+					    </div>
+					    <div th:case="'BRIC'">
+					        <img src="images/buildings/bric_1.jpg" class="card-img-top" alt="..." height="160" width="220">
+					    </div>
+						<div th:case="'Library'">
+					        <img src="images/buildings/library_1.jpg" class="card-img-top" alt="..." height="160" width="220">
+					    </div>
+					    <div th:case="'Starbucks'">
+					        <img src="images/buildings/starbucks_1.png" class="card-img-top" alt="..." height="160" width="220">
+					    </div>
+						<div th:case="'BSC'">
+					        <img src="images/buildings/bsc_1.jpg" class="card-img-top" alt="..." height="160" width="220">
+					    </div>
+					</th:block>
+					<div class="card-body">
+						<h5 class="card-title" th:text="${member.userName}"></h5>
+						<h6 class="card-subtitle mb-2 text-muted" th:text="${member.countryCode}" ></h6>
+						<p class="card-text" th:text="${member.gender}" ></p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted" th:text="${member.lastName}" ></small>
+					</div>
+				</div>
+			</tr>
+			
 
 		</div>
-
 	</div>
-
+ </div>
+</div>
 	<script src="js/meetups.js"></script>
     <script src="js/bootstrap.min.js"></script>
+</script>
 </body>
 </html>
